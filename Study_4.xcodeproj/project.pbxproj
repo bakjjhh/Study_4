@@ -14,6 +14,14 @@
 		5F17AD732940C083008F3D58 /* Study_4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F17AD712940C083008F3D58 /* Study_4.xcdatamodeld */; };
 		5F17AD752940C084008F3D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F17AD742940C084008F3D58 /* Assets.xcassets */; };
 		5F17AD782940C084008F3D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F17AD762940C084008F3D58 /* LaunchScreen.storyboard */; };
+		5F17AD802940C0A7008F3D58 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5F17AD7F2940C0A7008F3D58 /* README.rtf */; };
+		5F17AD8B2940C12A008F3D58 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5F17AD842940C12A008F3D58 /* A.wav */; };
+		5F17AD8C2940C12A008F3D58 /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5F17AD852940C12A008F3D58 /* C.wav */; };
+		5F17AD8D2940C12A008F3D58 /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5F17AD862940C12A008F3D58 /* B.wav */; };
+		5F17AD8E2940C12A008F3D58 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5F17AD872940C12A008F3D58 /* F.wav */; };
+		5F17AD8F2940C12A008F3D58 /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5F17AD882940C12A008F3D58 /* G.wav */; };
+		5F17AD902940C12A008F3D58 /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5F17AD892940C12A008F3D58 /* E.wav */; };
+		5F17AD912940C12A008F3D58 /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5F17AD8A2940C12A008F3D58 /* D.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		5F17AD742940C084008F3D58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F17AD772940C084008F3D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F17AD792940C084008F3D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F17AD7F2940C0A7008F3D58 /* README.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
+		5F17AD842940C12A008F3D58 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		5F17AD852940C12A008F3D58 /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
+		5F17AD862940C12A008F3D58 /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		5F17AD872940C12A008F3D58 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		5F17AD882940C12A008F3D58 /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
+		5F17AD892940C12A008F3D58 /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		5F17AD8A2940C12A008F3D58 /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +58,7 @@
 		5F17AD5C2940C083008F3D58 = {
 			isa = PBXGroup;
 			children = (
+				5F17AD7F2940C0A7008F3D58 /* README.rtf */,
 				5F17AD672940C083008F3D58 /* Study_4 */,
 				5F17AD662940C083008F3D58 /* Products */,
 			);
@@ -66,8 +83,23 @@
 				5F17AD762940C084008F3D58 /* LaunchScreen.storyboard */,
 				5F17AD792940C084008F3D58 /* Info.plist */,
 				5F17AD712940C083008F3D58 /* Study_4.xcdatamodeld */,
+				5F17AD832940C12A008F3D58 /* Sounds */,
 			);
 			path = Study_4;
+			sourceTree = "<group>";
+		};
+		5F17AD832940C12A008F3D58 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5F17AD842940C12A008F3D58 /* A.wav */,
+				5F17AD852940C12A008F3D58 /* C.wav */,
+				5F17AD862940C12A008F3D58 /* B.wav */,
+				5F17AD872940C12A008F3D58 /* F.wav */,
+				5F17AD882940C12A008F3D58 /* G.wav */,
+				5F17AD892940C12A008F3D58 /* E.wav */,
+				5F17AD8A2940C12A008F3D58 /* D.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +160,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F17AD912940C12A008F3D58 /* D.wav in Resources */,
+				5F17AD902940C12A008F3D58 /* E.wav in Resources */,
+				5F17AD8F2940C12A008F3D58 /* G.wav in Resources */,
+				5F17AD8C2940C12A008F3D58 /* C.wav in Resources */,
 				5F17AD782940C084008F3D58 /* LaunchScreen.storyboard in Resources */,
 				5F17AD752940C084008F3D58 /* Assets.xcassets in Resources */,
+				5F17AD8D2940C12A008F3D58 /* B.wav in Resources */,
+				5F17AD802940C0A7008F3D58 /* README.rtf in Resources */,
+				5F17AD8B2940C12A008F3D58 /* A.wav in Resources */,
 				5F17AD702940C083008F3D58 /* Main.storyboard in Resources */,
+				5F17AD8E2940C12A008F3D58 /* F.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
