@@ -11,24 +11,50 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var animetionView: UIView!
     
+    @IBOutlet var tap: UITapGestureRecognizer!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func animateBtnDidTouch(_ sender:Any) {
-        UIView.animate(withDuration: 1, delay: 0.5 , animations: {
-            self.animetionView.backgroundColor = .systemPink
-            self.animetionView.frame.size.width += 10
-            self.animetionView.frame.size.height += 10
-        }) {_ in
-            UIView.animate(withDuration: 1, delay: 0, options: .curveEaseIn) {
-                self.animetionView.backgroundColor = .orange
-                self.animetionView.frame.origin.y += 40
-            }
+    @IBAction func animateBtnDidTouch(_ sender:UITapGestureRecognizer) {
+        if sender.state == UITapGestureRecognizer.State.recognized {
+            
+            let location = sender.location(in:sender.view)
+            
+            let rectangle = UIView(frame:CGRect(x: location.x, y: location.y, width: 5, height: 5))
+            rectangle.backgroundColor = .black
+            
+            
+            UIView.animate(withDuration: 2, delay: 0.5 ,options: [.repeat , .autoreverse] , animations: {
+                
+                rectangle.backgroundColor = .orange
+                rectangle.frame.size.width += 10
+                rectangle.frame.size.height += 10
+                rectangle.frame.origin.y += 823
+                
+                
+            })
+            
+            
+            
+            self.view.addSubview(rectangle)
+            
         }
+        
+        
+        
+        
     }
     
-   
-
+    
+    
+    
 }
+
+
+
+
 

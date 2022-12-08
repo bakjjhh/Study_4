@@ -15,26 +15,24 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhh-zP-VcP">
-                                <rect key="frame" x="113" y="600" width="188" height="197"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="animateBtnDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yg6-2z-Hfz"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="wof-ac-zLu" appends="YES" id="AzG-Q0-e0O"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="animetionView" destination="8bC-Xf-vdC" id="Uce-NH-G4o"/>
+                        <outlet property="tap" destination="wof-ac-zLu" id="vah-zh-vtd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="wof-ac-zLu">
+                    <connections>
+                        <action selector="animateBtnDidTouch:" destination="BYZ-38-t0r" id="yzX-Xn-eZK"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="89.855072463768124" y="97.767857142857139"/>
         </scene>
